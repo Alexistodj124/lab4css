@@ -43,7 +43,7 @@
 }
 
 .crater {
-  position: absolute;
+  position: relative;
   background-color: #999; 
   border-radius: 50%;
 }
@@ -74,32 +74,38 @@
 }
 
 .crater:nth-child(1) {
-  top: 20px;
-  left: 40px;
+  position: relative;
+  top: 10px; 
+  left: 40px; 
 }
 
 .crater:nth-child(2) {
+  position: relative;
   top: 50px;
-  left: 120px;
+  left: 120px; 
 }
 
 .crater:nth-child(3) {
-  top: 130px;
-  left: 80px;
+  position: relative;
+  top: 100px; 
+  left: 80px; 
 }
 
 .crater:nth-child(4) {
-  top: 180px;
-  left: 160px;
+  position: relative;
+  top: 50px; 
+  left: 160px; 
 }
 
 .crater:nth-child(5) {
-  top: 90px;
-  left: 180px;
+  position: relative;
+  top: 0px; 
+  left: 180px; 
 }
 
 .crater:nth-child(6) {
-  top: 150px;
+  position: relative;
+  top: -50px; 
   left: 50px;
 }
 
