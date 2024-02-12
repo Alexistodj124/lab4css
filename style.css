@@ -1,4 +1,3 @@
-
 .title {
   color: #ffffff; 
   font-family: Arial, sans-serif; 
@@ -7,11 +6,31 @@
   letter-spacing: 2px; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   transition: transform 0.5s ease; 
+  position: relative; 
+}
+
+.title::before {
+  content: '';
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.title::after {
+  content: '';
+  position: relative; 
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-left: 5px;
 }
 
 .title:hover {
   transform: translateY(-5px);
 }
+.title + .moon {
+  margin-top: 50px;
+}
+
 
 .moon {
   width: 200px;
@@ -27,6 +46,16 @@
   position: absolute;
   background-color: #999; 
   border-radius: 50%;
+}
+.crater:nth-child(1) ~ .crater {
+  margin-left: 10px; 
+}
+.moon > .crater:first-child {
+  margin-left: 15px; 
+}
+
+.moon > .crater:last-child {
+  margin-right: 15px; 
 }
 
 .small {
@@ -89,8 +118,9 @@
 
 @keyframes blink {
   0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
+  50% { transform: scale(1.8); }
   100% { transform: scale(1); }
 }
+
 
 
