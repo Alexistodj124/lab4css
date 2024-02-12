@@ -1,0 +1,96 @@
+
+.title {
+  color: #ffffff; 
+  font-family: Arial, sans-serif; 
+  font-size: 36px; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  transition: transform 0.5s ease; 
+}
+
+.title:hover {
+  transform: translateY(-5px);
+}
+
+.moon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f3f3f3; 
+  position: relative;
+  overflow: hidden; 
+  transition: background-color 0.5s ease; 
+}
+
+.crater {
+  position: absolute;
+  background-color: #999; 
+  border-radius: 50%;
+}
+
+.small {
+  width: 10px;
+  height: 10px;
+}
+
+.medium {
+  width: 20px;
+  height: 20px;
+}
+
+.large {
+  width: 30px;
+  height: 30px;
+}
+
+.crater:nth-child(1) {
+  top: 20px;
+  left: 40px;
+}
+
+.crater:nth-child(2) {
+  top: 50px;
+  left: 120px;
+}
+
+.crater:nth-child(3) {
+  top: 130px;
+  left: 80px;
+}
+
+.crater:nth-child(4) {
+  top: 180px;
+  left: 160px;
+}
+
+.crater:nth-child(5) {
+  top: 90px;
+  left: 180px;
+}
+
+.crater:nth-child(6) {
+  top: 150px;
+  left: 50px;
+}
+
+
+.moon:hover {
+  background-color: #d4d4d4; 
+}
+
+.moon:active {
+  transform: scale(1.2); 
+}
+
+.crater {
+  animation: blink 5s infinite alternate;
+}
+
+@keyframes blink {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+
